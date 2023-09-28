@@ -63,7 +63,8 @@
               "browserTarget": "FSDRailwayFE:build:production"
             },
             "development": {
-              "browserTarget": "FSDRailwayFE:build:development"
+              "browserTarget": "FSDRailwayFE:build:development",
+              "proxyConfig": "src/proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"

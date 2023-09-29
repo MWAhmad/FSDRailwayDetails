@@ -1,5 +1,3 @@
-
-
 export interface TimeTable{
     id: string,
     name: string,

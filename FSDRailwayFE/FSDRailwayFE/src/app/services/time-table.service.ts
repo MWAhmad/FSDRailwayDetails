@@ -1,11 +1,16 @@
+import { HttpClient } from '@angular/common/http';
 import { Inject, Injectable } from '@angular/core';
-import { appServiceConfig } from '../AppConfig/appconfig.service';
-import { AppConfig } from '../AppConfig/appconfig';
+import { TimeTable } from '../time-table/time-table';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class TimeTableService {
 
-  constructor(@Inject(appServiceConfig) private config : AppConfig) { }
+  constructor(private http: HttpClient) { }
+
+  getTimeTableDetails(){
+    return this.http.get<TimeTable[]>('/api/controller')
+  }
 }

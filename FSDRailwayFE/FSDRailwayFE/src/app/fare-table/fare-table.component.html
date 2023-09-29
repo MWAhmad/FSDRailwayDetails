@@ -11,13 +11,13 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+            <tr *ngFor="let fareData of FareTableData">
+                <td>{{fareData.id}}</td>
+                <td>{{fareData.name}}</td>
+                <td>{{fareData.economy}}</td>
+                <td>{{fareData.ac}}</td>
+                <td>{{fareData.business}}</td>
+                <td>{{fareData.berth}}</td>
             </tr>
         </tbody>
     </table>

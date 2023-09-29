@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { FareTable } from '../fare-table/FareTb';
-import { FareTableService } from '../services/fare-table.service';
 import { ExpressTableService } from '../services/express-table.service';
 import { ExpressTable } from './ExpTable';
 

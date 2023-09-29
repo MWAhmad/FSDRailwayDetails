@@ -1,4 +1,6 @@
 using FSDRailway.Data;
+using FSDRailway.Mappings;
+using FSDRailway.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -6,11 +8,14 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<FSDRailwayDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("FSDRailwayConnectionString")));
+builder.Services.AddScoped<IFSDRailway, SQLFSDRailway>();
+builder.Services.AddAutoMapper(typeof(AutoMapperProfiles));
 
 var app = builder.Build();
 

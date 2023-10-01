@@ -8,6 +8,7 @@ import { ExpressTableComponent } from './express-table/express-table.component';
 import { FareTableComponent } from './fare-table/fare-table.component';
 import { App_Config, appServiceConfig } from './AppConfig/appconfig.service';
 import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [
     {

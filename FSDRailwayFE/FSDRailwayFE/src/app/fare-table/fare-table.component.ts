@@ -13,7 +13,7 @@ export class FareTableComponent implements OnInit {
   constructor(private fareService: FareTableService){}
 
   ngOnInit(): void {
-    // this.fareService.getFareTableDetails().subscribe(data =>
-    //   this.FareTableData = data)
+    this.fareService.getFareTableDetails().subscribe(data =>
+      this.FareTableData = data)
   }
 }

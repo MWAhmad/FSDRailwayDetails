@@ -13,7 +13,7 @@ export class TimeTableComponent implements OnInit {
   constructor(private timeTableService: TimeTableService){}
 
   ngOnInit(): void {
-    // this.timeTableService.getTimeTableDetails().subscribe(data =>
-    //   this.TimeTableData = data)
+    this.timeTableService.getTimeTableDetails().subscribe(data =>
+      this.TimeTableData = data)
   }
 }

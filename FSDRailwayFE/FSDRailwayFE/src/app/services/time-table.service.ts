@@ -10,7 +10,7 @@ export class TimeTableService {
 
   constructor(private http: HttpClient) { }
 
-  // getTimeTableDetails(){
-  //   return this.http.get<TimeTable[]>('/api/controller')
-  // }
+  getTimeTableDetails(){
+    return this.http.get<TimeTable[]>('/api/controller')
+  }
 }

@@ -10,9 +10,9 @@ export class FareTableService {
 
   constructor(private http : HttpClient) { }
 
-  getFareTableDetails(){
-    return this.http.get<FareTable[]>('/api/controller')
-  }
+  // getFareTableDetails(){
+  //   return this.http.get<FareTable[]>('/api/controller')
+  // }
 
   
 }

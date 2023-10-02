@@ -19,5 +19,7 @@ export class ExpressTableService {
 
   getExpressNames() : Observable<ExpressName[]>{
     return this.Http.get<ExpressName[]>(this.baseApiAddress + '/api/FSDRailway')
+    // return this.Http.get<ExpressName[]>('https://localhost:7026/api/FSDRailway')
+    // return this.Http.get<ExpressName[]>(`/api/api/FSDRailway`);
   }
 }

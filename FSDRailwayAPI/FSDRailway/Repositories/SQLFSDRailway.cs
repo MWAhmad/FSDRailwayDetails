@@ -16,7 +16,7 @@ namespace FSDRailway.Repositories
 
         public async Task<List<Train>> GetAllAsync()
         {
-             return await dbContext.Trains.ToListAsync();
+             return await dbContext.Trains.Include("Prices").Include("Timings").ToListAsync();
         }
 
         public async Task<Train> GetByIdAsync(Guid id)

@@ -9,6 +9,8 @@ namespace FSDRailway.Mappings
         public AutoMapperProfiles()
         {
             CreateMap<Train, TrainDTO>().ReverseMap();
+            CreateMap<Timings, TimingsDTO>().ReverseMap();
+            CreateMap<Price, PriceDTO>().ReverseMap();
         }
     }
 }

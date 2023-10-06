@@ -3165,19 +3165,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\LEO\\.nuget\\packages\\": {}
+    "C:\\Users\\WALEED AHMAD\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\FSDR\\FSDRailwayDetails\\FSDRailwayAPI\\FSDRailway\\FSDRailway.csproj",
+      "projectUniqueName": "F:\\Project\\FSDRailwayAPI\\FSDRailway\\FSDRailway.csproj",
       "projectName": "FSDRailway",
-      "projectPath": "D:\\Projects\\FSDR\\FSDRailwayDetails\\FSDRailwayAPI\\FSDRailway\\FSDRailway.csproj",
-      "packagesPath": "C:\\Users\\LEO\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\FSDR\\FSDRailwayDetails\\FSDRailwayAPI\\FSDRailway\\obj\\",
+      "projectPath": "F:\\Project\\FSDRailwayAPI\\FSDRailway\\FSDRailway.csproj",
+      "packagesPath": "C:\\Users\\WALEED AHMAD\\.nuget\\packages\\",
+      "outputPath": "F:\\Project\\FSDRailwayAPI\\FSDRailway\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\LEO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\WALEED AHMAD\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3185,6 +3185,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3245,7 +3246,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

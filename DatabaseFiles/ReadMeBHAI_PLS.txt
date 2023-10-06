@@ -1,0 +1,1 @@
+paste these files in the folder: C:\Program Files\Microsoft SQL Server\MSSQL16.SQLEXPRESS\MSSQL\DATA\

@@ -1,0 +1,19 @@
+<div class="timetable">
+    <table>
+        <thead>
+            <tr>
+                <th>Express Name</th>
+                <th>Arrival Time</th>
+                <th>Departure Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let timetable of TimeTableData">
+                <td>{{timetable.id}}</td>
+                <td>{{timetable.name}}</td>
+                <td>{{timetable.arrivalTime}}</td>
+                <td>{{timetable.departureTime}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

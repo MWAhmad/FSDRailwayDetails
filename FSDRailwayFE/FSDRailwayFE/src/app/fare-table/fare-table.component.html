@@ -1,0 +1,24 @@
+<div class="container">
+    <table>
+        <thead>
+            <tr>
+                <th>Serial</th>
+                <th>Name</th>
+                <th>Economy</th>
+                <th>AC</th>
+                <th>Business</th>
+                <th>Berth</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let fareData of FareTableData">
+                <td>{{fareData.id}}</td>
+                <td>{{fareData.name}}</td>
+                <td>{{fareData.economy}}</td>
+                <td>{{fareData.ac}}</td>
+                <td>{{fareData.business}}</td>
+                <td>{{fareData.berth}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

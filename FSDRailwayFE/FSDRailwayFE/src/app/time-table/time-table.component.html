@@ -1,19 +1,17 @@
-<div class="timetable">
-    <table>
-        <thead>
-            <tr>
-                <th>Express Name</th>
-                <th>Arrival Time</th>
-                <th>Departure Time</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor="let timetable of TimeTableData">
-                <td>{{timetable.id}}</td>
-                <td>{{timetable.name}}</td>
-                <td>{{timetable.arrivalTime}}</td>
-                <td>{{timetable.departureTime}}</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
+<h2>We Follow Our Time-Table Strictly.</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Express Name</th>
+            <th>Arrival Time</th>
+            <th>Departure Time</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let express of Expresses;">
+            <td>{{express.name}}</td>
+            <td>{{express.timings.arrivalTime}}</td>
+            <td>{{express.timings.departureTime}}</td>
+        </tr>
+    </tbody>
+</table>

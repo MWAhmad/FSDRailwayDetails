@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { TimeTable } from './time-table';
-import { TimeTableService } from '../services/time-table.service';
+import { Train } from '../interfaces/trainDetails';
+import { TrainService } from '../services/train.service';
 
 @Component({
   selector: 'FSDR-time-table',
@@ -8,12 +8,13 @@ import { TimeTableService } from '../services/time-table.service';
   styleUrls: ['./time-table.component.css']
 })
 export class TimeTableComponent implements OnInit {
-  TimeTableData!: TimeTable[];
 
-  constructor(private timeTableService: TimeTableService){}
+  Expresses : Train[] = []
+
+  constructor(private trainService: TrainService){}
 
   ngOnInit(): void {
-    // this.timeTableService.getTimeTableDetails().subscribe(data =>
-    //   this.TimeTableData = data)
+    this.trainService.getExpressDetails().subscribe(data =>
+      this.Expresses = data)
   }
 }

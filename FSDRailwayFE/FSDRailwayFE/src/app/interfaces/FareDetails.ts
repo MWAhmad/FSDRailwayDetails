@@ -1,7 +1,6 @@
 export interface FareTable{
     id: string,
-    name: string,
-    economy: number,
+    economyClass: number,
     ac: number,
     business: number,
     berth: number

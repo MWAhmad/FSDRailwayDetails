@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FareTable } from './FareTb';
-import { FareTableService } from '../services/fare-table.service';
+import { Train } from '../interfaces/trainDetails';
+import { TrainService } from '../services/train.service';
 
 @Component({
   selector: 'FSDR-fare-table',
@@ -8,12 +8,12 @@ import { FareTableService } from '../services/fare-table.service';
   styleUrls: ['./fare-table.component.css']
 })
 export class FareTableComponent implements OnInit {
-  FareTableData!: FareTable[];
+  Expresses: Train[] = []
 
-  constructor(private fareService: FareTableService){}
+  constructor(private trainService:TrainService){}
 
   ngOnInit(): void {
-    // this.fareService.getFareTableDetails().subscribe(data =>
-    //   this.FareTableData = data)
+    this.trainService.getExpressDetails().subscribe(data =>
+      this.Expresses = data)
   }
 }

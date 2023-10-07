@@ -1,0 +1,47 @@
+h2{
+    text-align: center;
+    opacity: 0;
+    animation: left-to-right 2000ms normal forwards 1 1000ms ease;
+    margin: 30px auto 50px auto;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(97, 7, 25, 0.90) 40%, rgb(216, 12, 56) 60%, rgba(2,0,36,1) 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+
+table, tr, th, td{
+    border: 1px solid rgb(216, 12, 56);
+    border-collapse: collapse;
+    background-color: rgb(7, 6, 12);
+}
+
+table{
+    animation: left-to-right 2000ms normal forwards 1 1000ms;
+    opacity: 0;
+    margin: 100px auto 150px auto;
+}
+
+th,td{
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(97, 7, 25, 0.596);
+}
+
+th{
+    color: rgb(236, 240, 30);
+}
+
+td{
+    color: rgb(108, 216, 108);
+}
+
+@keyframes left-to-right {
+    0%{
+        opacity: 0;
+        transform: translateX(-20%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}

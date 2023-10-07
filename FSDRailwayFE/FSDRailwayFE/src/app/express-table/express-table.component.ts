@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ExpressTableService } from '../services/express-table.service';
-import { ExpressName, ExpressTable } from './ExpTable';
+import { TrainService } from '../services/train.service';
+import { Train } from '../interfaces/trainDetails';
 
 @Component({
   selector: 'FSDR-express-table',
@@ -8,19 +8,14 @@ import { ExpressName, ExpressTable } from './ExpTable';
   styleUrls: ['./express-table.component.css']
 })
 export class ExpressTableComponent implements OnInit {
-  ExpressTableData: ExpressTable[] = []
+  Expresses : Train[] = []
 
-  ExpressNames : ExpressName[] = []
-
-  constructor(private exptableService: ExpressTableService){}
+  constructor(private trainService: TrainService){}
 
   ngOnInit(): void {
-  //   this.exptableService.getExpressDetails().subscribe(data => 
-  //   this.ExpressTableData = data)
-  // 
 
-  this.exptableService.getExpressNames().subscribe(data =>
-    this.ExpressNames = data)
+  this.trainService.getExpressDetails().subscribe(data =>
+    this.Expresses = data)
 
   }
 }

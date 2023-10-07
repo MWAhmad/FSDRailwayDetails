@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { TimeTableService } from './time-table.service';
+import { TrainService } from './train.service';
 
-describe('TimeTableService', () => {
-  let service: TimeTableService;
+describe('TrainService', () => {
+  let service: TrainService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(TimeTableService);
+    service = TestBed.inject(TrainService);
   });
 
   it('should be created', () => {

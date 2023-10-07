@@ -9,6 +9,7 @@ import { FareTableComponent } from './fare-table/fare-table.component';
 import { App_Config, appServiceConfig } from './AppConfig/appconfig.service';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HeaderComponent,
     TimeTableComponent,
     ExpressTableComponent,
-    FareTableComponent
+    FareTableComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

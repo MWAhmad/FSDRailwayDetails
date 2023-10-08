@@ -10,9 +10,10 @@ h2{
 
 .perspective-frame{
     opacity: 0;
-    animation: left-to-right 1800ms normal forwards 1 1000ms ease;
+    animation: left-to-right-inc 1800ms normal forwards 1 1000ms ease;
     perspective: 500px;
     margin: 100px auto 150px auto;
+    width: 80%;
 }
 
 
@@ -65,11 +66,13 @@ td{
     }
 }
 
-@keyframes reveal {
-    0%{
-        filter: blur(10px) grayscale(100%);
+@keyframes left-to-right-inc {
+    from{
+        opacity: 0;
+        transform: translateX(-20%);
     }
-    100%{
-        filter: blur(0) grayscale(0);
+    to{
+        opacity: 1;
+        transform: translateX(4%);
     }
 }

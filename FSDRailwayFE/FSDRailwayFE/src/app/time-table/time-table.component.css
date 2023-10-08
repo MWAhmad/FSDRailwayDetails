@@ -10,9 +10,10 @@ h2{
 
 .perspective-frame{
     opacity: 0;
-    animation: left-to-right 1800ms normal forwards 1 1000ms ease;
+    animation: left-to-right-inc 1800ms normal forwards 1 1000ms ease;
     perspective: 500px;
     margin: 100px auto 150px auto;
+    width: 80%;
 }
 
 table{
@@ -61,5 +62,16 @@ td{
     100%{
         opacity: 1;
         transform: translateX(0%);
+    }
+}
+
+@keyframes left-to-right-inc {
+    from{
+        opacity: 0;
+        transform: translateX(-20%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(4%);
     }
 }

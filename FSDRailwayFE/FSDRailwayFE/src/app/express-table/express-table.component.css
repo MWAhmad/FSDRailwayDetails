@@ -8,10 +8,26 @@ h2{
     color: transparent;
 }
 
-table{
-    animation: left-to-right 2000ms normal forwards 1 1000ms;
+.perspective-frame{
     opacity: 0;
+    animation: left-to-right 1800ms normal forwards 1 1000ms ease;
+    perspective: 500px;
     margin: 100px auto 150px auto;
+}
+
+
+table{
+    margin: auto auto;
+    transform-style: preserve-3d;
+    transform: rotateY(23deg);
+    box-shadow: -10px 15px 20px 5px crimson;
+    transition: filter 250ms ease 50ms;
+    filter: blur(10px) grayscale(100%);
+}
+
+table:hover{
+    filter: blur(0) grayscale(0);
+    cursor: none;
 }
 
 table, tr, th, td{
@@ -24,6 +40,10 @@ th,td{
     padding: 10px;
     text-align: center;
     background-color: rgba(97, 7, 25, 0.596);
+}
+
+th:hover, td:hover{
+    background-color: rgba(97, 7, 25, 0.896);
 }
 
 th{
@@ -42,5 +62,14 @@ td{
     100%{
         opacity: 1;
         transform: translateX(0%);
+    }
+}
+
+@keyframes reveal {
+    0%{
+        filter: blur(10px) grayscale(100%);
+    }
+    100%{
+        filter: blur(0) grayscale(0);
     }
 }

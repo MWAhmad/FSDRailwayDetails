@@ -1,17 +1,19 @@
 <h2>We Follow Our Time-Table Strictly.</h2>
-<table>
-    <thead>
-        <tr>
-            <th>Express Name</th>
-            <th>Arrival Time</th>
-            <th>Departure Time</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let express of Expresses;">
-            <td>{{express.name}}</td>
-            <td>{{express.timings.arrivalTime}}</td>
-            <td>{{express.timings.departureTime}}</td>
-        </tr>
-    </tbody>
-</table>
+<div class="perspective-frame">
+    <table>
+        <thead>
+            <tr>
+                <th>Express Name</th>
+                <th>Arrival Time</th>
+                <th>Departure Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let express of Expresses;">
+                <td>{{express.name}}</td>
+                <td>{{express.timings.arrivalTime}}</td>
+                <td>{{express.timings.departureTime}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

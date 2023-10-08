@@ -1,15 +1,17 @@
 <h2>Travel In CyberPunk-Style.</h2>
-<table>
-    <thead>
-        <tr>
-            <th>Serial Number</th>
-            <th>Express Name</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let express of Expresses;">
-            <td>{{express.id}}</td>
-            <td>{{express.name}}</td>
-        </tr>
-    </tbody>
-</table>
+<div class="perspective-frame">
+    <table>
+        <thead>
+            <tr>
+                <th>Serial Number</th>
+                <th>Express Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let express of Expresses;">
+                <td>{{express.id}}</td>
+                <td>{{express.name}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

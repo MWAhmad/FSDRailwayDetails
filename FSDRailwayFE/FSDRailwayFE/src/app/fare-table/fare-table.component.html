@@ -1,21 +1,23 @@
 <h2>Travel In Luxury.</h2>
-<table>
-    <thead>
-        <tr>
-            <th>Express Name</th>
-            <th>Economy</th>
-            <th>AC</th>
-            <th>Business</th>
-            <th>Berth</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let express of Expresses;">
-            <td>{{express.name}}</td>
-            <td>{{express.prices.economyClass}}</td>
-            <td>{{express.prices.ac}}</td>
-            <td>{{express.prices.business}}</td>
-            <td>{{express.prices.berth}}</td>
-        </tr>
-    </tbody>
-</table>
+<div class="perspective-frame">
+    <table>
+        <thead>
+            <tr>
+                <th>Express Name</th>
+                <th>Economy</th>
+                <th>AC</th>
+                <th>Business</th>
+                <th>Berth</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let express of Expresses;">
+                <td>{{express.name}}</td>
+                <td>{{express.prices.economyClass}}</td>
+                <td>{{express.prices.ac}}</td>
+                <td>{{express.prices.business}}</td>
+                <td>{{express.prices.berth}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

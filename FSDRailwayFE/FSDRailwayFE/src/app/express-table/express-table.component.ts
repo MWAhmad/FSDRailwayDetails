@@ -14,7 +14,7 @@ export class ExpressTableComponent implements OnInit {
 
   ngOnInit(): void {
 
-  this.trainService.getExpressDetails().subscribe(data =>
+  this.trainService.getExpressDetails$.subscribe(data =>
     this.Expresses = data)
 
   }

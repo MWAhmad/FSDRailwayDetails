@@ -14,7 +14,7 @@ export class TimeTableComponent implements OnInit {
   constructor(private trainService: TrainService){}
 
   ngOnInit(): void {
-    this.trainService.getExpressDetails().subscribe(data =>
+    this.trainService.getExpressDetails$.subscribe(data =>
       this.Expresses = data)
   }
 }

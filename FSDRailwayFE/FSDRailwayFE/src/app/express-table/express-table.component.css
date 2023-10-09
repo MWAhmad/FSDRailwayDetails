@@ -22,13 +22,16 @@ table{
     transform-style: preserve-3d;
     transform: rotateY(23deg);
     box-shadow: -10px 15px 20px 5px crimson;
-    transition: filter 250ms ease 50ms;
+    transition: filter 250ms ease 50ms,
+                translate 250ms ease 50ms;
     filter: blur(10px) grayscale(100%);
 }
 
 table:hover{
     filter: blur(0) grayscale(0);
+    translate: 0 -5%;
     cursor: none;
+    animation: float 3000ms ease-in-out alternate infinite 250ms;
 }
 
 table, tr, th, td{
@@ -74,5 +77,15 @@ td{
     to{
         opacity: 1;
         transform: translateX(4%);
+    }
+}
+
+@keyframes float {
+    0%{
+        translate: 0 -5%;
+    }
+
+    100%{
+        translate: 0 5%;
     }
 }
